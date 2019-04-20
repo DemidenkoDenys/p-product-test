@@ -1,0 +1,27 @@
+.image-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  list-style-type: none;
+  min-height: calc(100vh - 60px);
+  padding-top: 20px;
+}
+
+.image-item{
+  width: 31%;
+  margin: 10px;
+}
+
+.image-item-empty{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}

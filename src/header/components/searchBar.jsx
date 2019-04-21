@@ -10,9 +10,9 @@ import {
   FormControl,
 } from 'react-bootstrap';
 
- const SearchBar = ({ value, placeholder, onChange, onSubmit, loading }) =>
+const SearchBar = ({ value, placeholder, onChange, onSubmit, loading }) =>
   <Container>
-    <Row className="justify-content-md-center">
+    <Row className="justify-content-center">
       <Col xs={6}>
         <Form onSubmit={ event => { event.preventDefault(); onSubmit(); }}>
           <InputGroup>
@@ -24,7 +24,7 @@ import {
               aria-describedby="basic-addon2"
             />
             <InputGroup.Append>
-              <Button variant="primary">
+              <Button variant="primary" type="submit">
                 { loading ? 'Searching' : 'Search' }
               </Button>
             </InputGroup.Append>

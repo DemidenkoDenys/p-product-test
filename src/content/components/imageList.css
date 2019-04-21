@@ -8,7 +8,7 @@
 }
 
 .image-item{
-  width: 31%;
+  width: calc(33% - 20px);
   margin: 10px;
 }
 

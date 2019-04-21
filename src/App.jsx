@@ -12,7 +12,6 @@ class App extends Component {
   api = 'https://pixabay.com/api/';
   key = '12249647-dab6ecae1cecfdcb9f649786a';
   url = `${this.api}?key=${this.key}`;
-  // headers = { 'Access-Control-Allow-Origin': '*' };
 
   state = {
     init: true,
@@ -42,7 +41,6 @@ class App extends Component {
 
   render() {
     return <>
-
       <header className={ `search-wrapper ${this.state.init ? 'fullscreen-init' : ''}` } >
         <SearchBar
           value={ this.state.searchString }
@@ -52,11 +50,9 @@ class App extends Component {
           placeholder="What images would you like to see on Pixabay?"
         />
       </header>
-
       <main>
         <ImageList images={ this.state.images } />
       </main>
-
     </>;
   }
 }
